@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="book-header">
+            <img 
+                src="./assets/library_books.png" 
+                alt=""
+                height="50px"> 
+            <h2>My Library</h2>
+        </div>
+        <div class="book-body">
+            <input type="text" 
+                   id="bookText" 
+                   class="book-input" 
+                   placeholder="Add new book"
+            />
+            <img src="./assets/circle.png" 
+                 alt="+" 
+                 id="AddUpdateClick" 
+                 onclick="addBook();"
+            />
+        </div>        
+        <h5 id="Alert"></h5>
+        <ul id="list-books" class="list-books"></ul>
+    </div>
+
+<script type="text/javascript" src="script.js"></script>    
+</body>
+</html>
